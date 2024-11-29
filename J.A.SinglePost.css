@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.baltana.com/files/wallpapers-20/Aesthetic-Pixel-Art-HD-Desktop-Wallpaper-49281.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+nav.toolbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .user-info {
+    font-size: 16px;
+    text-align: left;
+}
+
+nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+main h1{
+    font-size: 38px;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8);
+}
+
+#post-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #a16969;
+}
+
+
+#post-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#post-container p {
+    font-size: 16px;
+    color: #f2f6ef;
+}
+
+#post-container a {
+    text-decoration: none;
+    color: #e60b0b;
+}
+
+#post-container a:hover {
+    text-decoration: underline;
+}

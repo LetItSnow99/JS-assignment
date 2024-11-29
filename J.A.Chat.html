@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Page</title>
+  <link rel="stylesheet" href="J.A.Chat.css">
+</head>
+<body>
+
+<div id="app">
+  <nav class="toolbar">
+    <div class="user-info">
+      Logged in as: <span id="user-email">guest@example.com</span>
+    </div>
+    <hr />
+    <ul id="navbar" class="nav-links">
+      <li><a href="J.A.Index.html">Home 🏠︎</a></li>
+      <li><a href="J.A.Gallery.html">Gallery 🖼</a></li>
+      <li><a href="J.A.Chat.html">Chat 🗪</a></li>
+      <li><a href="J.A.Profile.html">User profile 👤</a></li>
+      <li id="auth-link"><a href="J.A.Login.html">Login ↪</a></li>
+    </ul>
+  </nav>
+
+  <div id="chat-container">
+    <div id="chat-header">Chat Room</div>
+    <div id="messages"></div>
+    <div id="message-input">
+      <input type="text" placeholder="Type your message..." />
+      <button>Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="J.A.Chat.js"></script>
+</body>
+</html>

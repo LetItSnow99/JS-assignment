@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://e0.pxfuel.com/wallpapers/188/113/desktop-wallpaper-%DC%935705-clouds-sky-storm-2019-2388-x-1668-android-iphone-background-background-android-iphone-2022-red-storm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+nav.toolbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .user-info {
+    font-size: 16px;
+    text-align: left;
+}
+
+nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav .nav-links li a:hover {
+    text-decoration: underline !important;
+    color: #ffffff !important;
+}
+
+main {
+    padding: 20px;
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid blue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.load-more:hover {
+    background-color: #555;
+}

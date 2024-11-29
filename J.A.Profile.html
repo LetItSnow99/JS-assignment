@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="J.A.Profile.css">
+  <script src="J.A.Profile.js" defer></script>
+</head>
+<body>
+<div id="app">
+  <nav class="toolbar">
+    <div class="user-info">
+      Logged in as: <span id="user-email">guest@example.com</span>
+    </div>
+    <hr />
+    <ul id="navbar" class="nav-links">
+      <li><a href="J.A.Index.html">Home 🏠︎</a></li>
+      <li><a href="J.A.Gallery.html">Gallery 🖼</a></li>
+      <li><a href="J.A.Chat.html">Chat 🗪</a></li>
+      <li><a href="J.A.Profile.html">User profile 👤</a></li>
+      <li id="auth-link"><a href="J.A.Login.html">Login ↪</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Profile:</h1>
+    <div class="profile-container">
+      <div class="profile-row">
+        <img id="user-image" src="https://www.transparentpng.com/thumb/user/blak-frame-user-profile-png-icon--cupR3D.png" alt="User Image">
+        <div class="profile-buttons">
+          <button id="change-image-button">Change Image</button>
+          <button id="delete-image-button">Delete Photo</button>
+        </div>
+      </div>
+      <div class="profile-details">
+        <p><strong>EMAIL:</strong> <span id="profile-email">guest@example.com</span></p>
+        <button id="change-password-button">Change Password</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="change-password-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Change Password</h2>
+    <input type="password" id="old-password" placeholder="Repeat your old password">
+    <input type="password" id="new-password" placeholder="Create new password">
+    <input type="password" id="repeat-new-password" placeholder="Repeat your new password">
+    <button id="confirm-password-change">Change</button>
+    <button id="close-modal">Close</button>
+  </div>
+</div>
+
+<div id="change-image-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Change Profile Image</h2>
+    <input type="text" id="image-url" placeholder="Enter the URL of the new image">
+    <button id="confirm-image-change">Change</button>
+    <button id="close-image-modal">Close</button>
+  </div>
+</div>
+</body>
+</html>
